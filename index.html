@@ -5,14 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    body{
+     background-color: grey;
+    }
+    
+    #card{
+     border: 5px solid black;
+      background-color: lightblue;
+    }
+  </style>
  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <h1>Ben Segarra</h1>
   <form>
     <label>Name:<input type="text" id="fullName"/></label>
+    
+    
+  </form>
+  <br/>
+  <button onclick="fullName()">Get Info</button>
+  
+  <div id="card">
+  <p1 id="listName"></p1>
+    
+  </div>
 
  
-  <script src="script.js"></script>
+  <script>
+    function getInfo(){
+    var fullName = document.getElementById('fullName').value;
+      
+      var getFullName = document.getElementById('listName').innerHTML = "Full Name: " + " " + fullName;
+      
+      
+    }
+    
+  </script>
 </body>
 </html>
